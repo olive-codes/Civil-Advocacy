@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PhotoDetailCS"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA1B9F">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/PhotoDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#570755"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PhotoDetailTitle"
+        android:layout_width="172dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/civil_advocacy"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/PhotoDetailToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PhotoDetailUserLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_specific_current_location"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoDetailToolbar" />
+
+    <View
+        android:id="@+id/PhotoDetailRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoDetailUserLocation"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/PhotoDetailOfficialPhoto"
+        android:layout_width="195dp"
+        android:layout_height="281dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/pd_official_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PhotoDetailRectangleView"
+        app:srcCompat="@drawable/brokenimage" />
+
+    <ImageView
+        android:id="@+id/PhotoDetailPartyIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/pd_party_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/PhotoDetailRectangleView"
+        app:layout_constraintEnd_toStartOf="@+id/PhotoDetailOfficialPhoto"
+        app:layout_constraintStart_toStartOf="@+id/PhotoDetailRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoDetailJobTitle"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/PhotoDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/pd_official_name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PhotoDetailOfficialPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoDetailUserLocation" />
+
+    <TextView
+        android:id="@+id/PhotoDetailJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pd_job_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/PhotoDetailOfficialPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoDetailName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

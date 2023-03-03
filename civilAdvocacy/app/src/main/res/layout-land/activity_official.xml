@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/OfficialCS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA1B9F">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/OfficialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#570755"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/OfficialTitle"
+        android:layout_width="172dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/civil_advocacy"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/OfficialToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/OfficialUserLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_specific_current_location"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialToolbar" />
+
+    <View
+        android:id="@+id/OfficialRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialUserLocation"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/OfficialOfficialPhoto"
+        android:layout_width="175dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/o_op"
+        app:srcCompat="@drawable/missing"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/OfficialName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/first_m_last"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialUserLocation" />
+
+    <TextView
+        android:id="@+id/OfficialJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/representative"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialName" />
+
+    <TextView
+        android:id="@+id/OfficialParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown_party"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintEnd_toEndOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintStart_toStartOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialUserLocation" />
+
+    <ImageView
+        android:id="@+id/OfficialFBIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/o_fbi"
+        app:layout_constraintStart_toEndOf="@+id/OfficialAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialWebsiteLink"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/OfficialYTIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/o_yti"
+        app:layout_constraintStart_toEndOf="@+id/OfficialFBIcon"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialWebsiteLink"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/OfficialTwitterIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/o_ti"
+        app:layout_constraintStart_toEndOf="@+id/OfficialYTIcon"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialWebsiteLink"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/OfficialPartyIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/o_pi"
+        app:layout_constraintBottom_toBottomOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintEnd_toEndOf="@+id/OfficialOfficialPhoto"
+        app:layout_constraintStart_toStartOf="@+id/OfficialOfficialPhoto"
+        app:srcCompat="@drawable/dem_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/OfficialAddressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/address"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialJobTitle" />
+
+    <TextView
+        android:id="@+id/OfficialPhoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialAddressLink" />
+
+    <TextView
+        android:id="@+id/OfficialEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialPhoneLink" />
+
+    <TextView
+        android:id="@+id/OfficialWebsiteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/website"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialEmailLink" />
+
+    <TextView
+        android:id="@+id/OfficialAddressLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/some_address"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/OfficialAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialJobTitle" />
+
+    <TextView
+        android:id="@+id/OfficialPhoneLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_000_000_0000"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/OfficialAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialAddressTitle" />
+
+    <TextView
+        android:id="@+id/OfficialEmailLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/gmail_com"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/OfficialAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialPhoneLink" />
+
+    <TextView
+        android:id="@+id/OfficialWebsiteLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/hello"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/OfficialAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/OfficialEmailLink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

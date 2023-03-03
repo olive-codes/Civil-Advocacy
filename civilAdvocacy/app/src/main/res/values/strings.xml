@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">civilAdvocacy</string>
+    <string name="u_s_senator">U.S. Senator</string>
+    <string name="first_m_last">First M. Last</string>
+    <string name="unknown_party">(Unknown Party)</string>
+    <string name="official_photo">official photo</string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+    <string name="user_specific_current_location">user specific current location</string>
+    <string name="pd_official_name">PD Official Name</string>
+    <string name="pd_job_title">PD Job Title</string>
+    <string name="pd_party_icon">PD Party Icon</string>
+    <string name="pd_official_photo">PD Official Photo</string>
+    <string name="_000_000_0000">000-000-0000</string>
+    <string name="gmail_com">gmail.com</string>
+    <string name="address">address</string>
+    <string name="phone">phone</string>
+    <string name="hello">hello</string>
+    <string name="website">website</string>
+    <string name="email">email</string>
+    <string name="representative">representative</string>
+    <string name="some_address">some address</string>
+    <string name="o_op">O OP</string>
+    <string name="o_fbi">O FBI</string>
+    <string name="o_yti">O YTI</string>
+    <string name="o_ti">O TI</string>
+    <string name="o_pi">O PI</string>
+    <string name="unknown_location">unknown location</string>
+    <string name="main_ab">Main AB</string>
+    <string name="main_lsb">Main LSB</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_2022_olivia_becht">© 2022, Olivia Becht</string>
+    <string name="google_civic_information_api">Google Civic Information API</string>
+    <string name="data_provided_by">Data provided by</string>
+</resources>
